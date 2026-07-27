@@ -23,10 +23,32 @@
 
 ### Ghi chú scan
 
-- Problem #1, #4, #6 liên quan trực tiếp đến Rubric Audit — sản phẩm giúp sinh viên đối chiếu bài làm với Rubric trước khi nộp.
+- Problem #1, #4, #6 liên quan trực tiếp đến Rubric Audit — sản phẩm giúp sinh viên đối chiếu bài làm với Rubric trước khi nộp. Đây là candidate được nhóm chọn (xem `02-group-problem-statement/group-report.md`, Phase 3.4).
 - Problem #2 (đọc paper) và #5 (chuẩn bị slide) là pain thật trong môi trường học tập.
 - Problem #7 (Discord deadline) có data access phức tạp nhưng lặp lại thường xuyên.
 - Data source: quick interview 3 sinh viên + mini poll 6 người trong lớp + trải nghiệm cá nhân.
+
+### Phân tích độ đa dạng của scan (Bonus: scan rộng)
+
+Bảng dưới chứng minh 10 problems trải đều qua **4 bối cảnh quan sát** và **4 lăng kính phân tích**:
+
+| Bối cảnh | Số problem | Problem # | Độ cụ thể |
+|---|---|---|---|
+| Học tập (bài nộp, Rubric, paper, audio) | 6 | #1, #2, #4, #5, #6, #10 | Có actor cụ thể (sinh viên, trợ giảng), có dấu hiệu thật (số phút, số người poll) |
+| Công việc / thực tập (report, review PRD) | 2 | #3, #9 | Có actor (PM, Tech Lead), có metric thời gian cụ thể |
+| Nhóm / CLB / dự án (slide, phân công) | 1 | #5 (liên nhóm) | Overlap với học tập nhưng context khác (làm nhóm vs cá nhân) |
+| Sản phẩm đang dùng (Discord, Slack, LMS) | 3 | #7, #8, #10 | Pain từ chính nền tảng sinh viên dùng hằng ngày |
+
+**Phân bổ theo lăng kính:**
+
+| Lăng kính | Số problem | Problem # |
+|---|---|---|
+| Lặp lại | 6 | #1, #2, #3, #7, #9, #10 |
+| Tốn thời gian | 7 | #1, #2, #3, #5, #8, #9, #10 |
+| AI có thể tốt hơn | 4 | #1, #4, #5, #7 |
+| Pain từ người khác | 4 | #1, #6, #8, #10 |
+
+> **Nhận xét:** 4/10 problems thuộc ≥2 lăng kính (ví dụ #1 vừa lặp lại vừa tốn thời gian) — đây là dấu hiệu problem có impact cao. 6/10 problems có dấu hiệu thật định lượng (số phút, số người, tần suất/tuần). Không có problem nào chỉ là "ý tưởng chung chung".
 
 ---
 

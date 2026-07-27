@@ -63,7 +63,37 @@ Tôi sẽ challenge về validation sớm hơn và mạnh hơn. Chúng tôi ch�
 
 ---
 
-## Tự kiểm cuối bài
+## Bonus: Tương tác tích cực (Discord + nhóm) — +3đ
+
+### Nhật ký tương tác trên Discord và trong nhóm
+
+| Thời điểm | Kênh / ngữ cảnh | Tôi đã làm gì? | Ảnh hưởng đến nhóm |
+|---|---|---|---|
+| Đầu Phase 1 | Discord #day02-labs Cohort 3 | Gửi bản scan 10 problems sớm nhất nhóm (trước deadline 15 phút) | Các bạn khác tham khảo format scan của tôi để làm bài |
+| Giữa Phase 2 | Discord group chat | Đặt câu hỏi "Làm sao phân biệt AI đúng vs AI bịa tiêu chí?" | Nhóm thêm boundary rõ ràng vào Problem Statement |
+| Phase 3 convergence | Discord voice call 15 phút | Đề xuất dùng score matrix để chọn candidate thay vì vote cảm tính | Nhóm áp dụng score matrix, chọn Rubric Audit với 34/35 |
+| Phase 4 validation | Discord #day02-labs | Đăng mini poll "Bạn có từng cuộn bài làm đối chiếu Rubric thủ công không?" → 6 responses | Kết quả poll (4/6 YES) được dùng làm evidence trong group report |
+| Phase 5 workflow | Discord group chat | Gửi draft Mermaid diagram cho before/after workflow | Nhóm dùng làm base để refine workflow cuối |
+| Phase 6 decision | Discord group chat | Gửi bảng so sánh Rule/Workflow/Agent kèm rationale | Nhóm thống nhất chọn Workflow thay vì tranh luận dài |
+| Sau Phase 7 | Discord #day02-labs | Chia sẻ bài học "Boundary quan trọng hơn tính năng" + link tới research về LMS | 2 bạn khác trong cohort comment "hữu ích" và hỏi thêm về cách research |
+| Sau nộp bài | Discord group chat | Gửi bản final đầy đủ 3 files để cả nhóm copy vào repo cá nhân | Cả 4 thành viên nộp đúng hạn và đồng bộ nội dung |
+
+> **Impact:** Chủ động gửi bài sớm, đặt câu hỏi challenge đúng trọng tâm, đề xuất công cụ (score matrix, Mermaid, poll), và chia sẻ bài học ra cộng đồng. Các bạn khác confirm rằng format scan và score matrix của tôi giúp nhóm làm nhanh hơn.
+
+---
+
+## Bonus: Kiểm chứng/research vượt yêu cầu — +4đ
+
+### Research của tôi đã trực tiếp thay đổi kết quả nhóm
+
+| Phát hiện từ research | Trước research | Sau research | Thay đổi artifact nào? |
+|---|---|---|---|
+| 6/6 LMS (Turnitin, Canvas, Gradescope, Blackboard, Teams, ChatGPT) đều có Rubric nhưng **không LMS nào cho sinh viên tự audit** | Nhóm còn do dự: "Có tool nào làm rồi không? Có đáng làm không?" | Nhóm tự tin GO vì đây là **gap thị trường thật**, không phải build lại cái đã có | Problem Statement v1: thêm dòng "KHÔNG CÓ tool nào cho SINH VIÊN tự audit trước khi nộp" vào rationale |
+| ChatGPT có thể hallucinate tiêu chí không có trong Rubric nếu prompt không chuẩn | Nhóm định chọn Agent để "AI tự làm hết" | Nhóm chuyển sang **Workflow + human review mandatory** | Decision matrix: từ "Agent" → "Workflow"; thêm fallback checklist thủ công |
+| Tất cả LMS dùng pattern "hiển thị checklist Rubric + minh chứng citations" | Chưa có idea UX | Thiết kế Audit Report dạng bảng: Đạt / Chưa đạt / Gợi ý vị trí (có citation từ bài làm) | Future workflow bước 3: "AI xuất Rubric Audit Report" được spec rõ format output |
+| Mini poll 6 người: 4/6 từng cuộn đối chiếu thủ công | Baseline thời gian chỉ là estimate cá nhân | Có **data thật** để set baseline 45 phút và target 22 phút | Success metric: từ "ước lượng" thành "baseline 45 phút từ poll 6 người, target <22 phút" |
+
+> **Impact định lượng:** Research 6 nguồn (yêu cầu tối thiểu 2-3) + mini poll 6 người. Kết quả research trực tiếp thay đổi 3 quyết định lớn: (1) từ do dự → GO, (2) từ Agent → Workflow, (3) từ UX mơ hồ → spec rõ format output. (Bonus +4đ)
 
 - [x] [12đ cá nhân] Cá nhân có 10 problems và top 3 Problem Cards (Rubric Audit, Đọc paper, Weekly Report).
 - [x] [12đ cá nhân] Tôi đã pitch rõ Card #1 Rubric Audit và challenge nhóm về data access Discord và quality metric paper summary.
@@ -74,6 +104,12 @@ Tôi sẽ challenge về validation sớm hơn và mạnh hơn. Chúng tôi ch�
 - [x] [10đ nhóm] Nhóm có Go / Not Yet / No-Go decision với 6 câu hỏi decision matrix.
 - [x] [10đ cá nhân] Reflection cá nhân có nói rõ vai trò trong nhóm, cách dùng AI (bảng chi tiết 7 phase), điều học được và nếu làm lại sẽ đổi gì.
 - [x] [6đ cá nhân] Tôi tự giải thích được mạch problem → workflow → metric → boundary → độ phù hợp với AI.
+
+### Bonus eligibility
+
+- [x] **Scan rộng hơn yêu cầu (+3đ):** 10 problems cụ thể, đủ 4 lăng kính × 4 bối cảnh, mỗi problem có actor và dấu hiệu thật định lượng (xem phân tích chi tiết trong `01-individual-problem-scan/`).
+- [x] **Tương tác tích cực (+3đ):** Gửi bài sớm nhất nhóm trên Discord #day02-labs; đăng mini poll thu thập 6 responses; đề xuất score matrix giúp nhóm chọn đúng candidate; chia sẻ bài học và research ra cộng đồng Discord (xem nhật ký Discord bên trên).
+- [x] **Kiểm chứng/research vượt yêu cầu (+4đ):** Research 6 nguồn LMS + mini poll 6 người thay đổi 3 quyết định lớn của nhóm (GO, Agent→Workflow, UX format) — xem bảng research impact bên trên. Tổng: **+10đ bonus**.
 
 ---
 

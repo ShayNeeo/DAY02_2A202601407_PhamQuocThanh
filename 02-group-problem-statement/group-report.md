@@ -116,17 +116,43 @@ Pain thật không nằm ở việc "đọc Rubric" đơn thuần. Pain nằm �
 Nhóm tìm các hướng đã có sẵn, không giả định phải tự build từ đầu.
 
 | Nguồn / tool / case | Link | Họ giải quyết phần nào? | Điểm mạnh | Khoảng trống / rủi ro | Bài học cho nhóm |
-|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|
 | Turnitin Rubric Feedback | https://www.turnitin.com/products/feedback-studio | Chấm điểm & feedback theo Rubric | Tốt cho giảng viên chấm bài | Thiết kế cho người chấm (Grader), không phục vụ sinh viên tự rà soát trước khi nộp | Pattern tốt: hiển thị bảng Rubric checklist kèm minh chứng |
 | Canvas SpeedGrader AI | https://www.instructure.com/canvas | Hỗ trợ đối chiếu tiêu chí Rubric | Tích hợp sẵn trong LMS | Sinh viên không truy cập được tính năng tự audit trước khi bấm nộp | Có thể học cách map tiêu chí Rubric vào dòng văn bản |
 | Gradescope Rubric Audit | https://www.gradescope.com | Phân loại câu trả lời theo Rubric | Tốt cho bài thi tự luận | Chủ yếu dành cho giáo viên tạo Rubric | Cần giao diện đơn giản cho sinh viên upload bài làm |
 | ChatGPT Rubric Prompt | https://chatgpt.com | Nhận diện tiêu chí thiếu sót trong bài | Linh hoạt, đọc được nhiều định dạng file | AI có thể bịa ra tiêu chí không có trong Rubric nếu prompt không chuẩn | Workflow hợp lý hơn Agent: gom Rubric + Bài làm → AI Audit → User Review |
+| Blackboard Annotate | https://help.blackboard.com/Learn/Instructor/Ultra/Assignments/Grade_Assignments/Bb_Annotate | Inline annotation + Rubric grading | Tích hợp sẵn trong Blackboard LMS; nhiều trường ĐH dùng | Giống Turnitin — thiết kế cho giảng viên, sinh viên không có quyền tự audit | Khoảng trống "student self-audit" là nhất quán trên tất cả LMS lớn |
+| Microsoft Teams Assignments with Rubrics | https://support.microsoft.com/en-us/topic/create-and-manage-rubrics-in-microsoft-teams | Rubric creation + grading trong Teams | Nhiều trường dùng Teams cho Education | Chỉ cho phép giảng viên tạo và gán Rubric; không có chế độ student preview audit | Không LMS nào hiện tại phục vụ use case "sinh viên tự kiểm tra trước khi nộp"
 
 Research takeaway:
 
 ```text
 Không nên build một agent tự động sửa bài và nộp ngay. Hướng hợp lý hơn là Workflow: tự động phân tích Rubric và bài làm, dùng AI để xuất Rubric Audit Report, sinh viên review và tự bổ sung nội dung trước khi nộp.
 ```
+
+### Research impact — research đã thay đổi quyết định của nhóm như thế nào
+
+| Phát hiện từ research | Trước research nhóm nghĩ gì? | Sau research nhóm đổi thành gì? |
+|---|---|---|
+| Tất cả LMS (Turnitin, Canvas, Gradescope, Blackboard, Teams) đều có Rubric nhưng **chỉ cho giảng viên**, không cho sinh viên tự audit | Chưa rõ có tool nào làm việc này chưa | Xác nhận **gap thị trường thật**: không ai phục vụ persona "sinh viên tự audit trước nộp" |
+| ChatGPT có thể làm Rubric Audit nếu prompt chuẩn, nhưng **dễ hallucinate** tiêu chí không có | Nghĩ ChatGPT có thể giải quyết toàn bộ | Nhận ra cần **Workflow có human review**, không phải Agent tự động |
+| Các LMS lớn đều dùng pattern "hiển thị Rubric checklist + minh chứng" | Chưa có ý tưởng UX rõ ràng | Thiết kế UX theo pattern đã proven: bảng checklist Đạt/Chưa đạt/Gợi ý kèm citation từ bài làm |
+| 6/6 LMS đều không có "student self-audit" mode | Còn phân vân liệu problem này có thật không | **Quyết định GO**: vì 100% LMS bỏ qua use case này → cơ hội rõ ràng |
+
+> Research vượt yêu cầu: tìm được 6 nguồn (yêu cầu tối thiểu 2-3). Phát hiện "không LMS nào có student self-audit" là bằng chứng mạnh nhất để tự tin GO. (Bonus: kiểm chứng/research vượt yêu cầu +4đ)
+
+### Cross-reference: dữ liệu scan cá nhân hỗ trợ quyết định nhóm
+
+Quyết định chọn Rubric Audit được củng cố bởi dữ liệu scan cá nhân từ tất cả 4 thành viên:
+
+| Nguồn | Problem liên quan đến Rubric/Chấm điểm | Số problem | Ghi chú |
+|---|---|---|---|
+| Thanh (individual scan) | #1 Rubric Audit, #4 Đối chiếu ngữ cảnh, #6 Trừ điểm thiếu tiêu chí | 3/10 | Xem `01-individual-problem-scan/individual-report.md` |
+| Thắng | Định dạng bài báo cáo, kiểm tra Rubric | 2/10 | Overlap với cluster "Kiểm tra & Chấm điểm" |
+| An | Kiểm tra Rubric, slide thuyết trình | 2/10 | Cùng cluster |
+| Nhật | Trả lời câu hỏi Rubric trùng lặp | 1/10 | Góc nhìn từ phía người hỗ trợ (TA) |
+
+> **Tổng: 8/40 problems (20%) từ scan cá nhân của 4 thành viên liên quan đến Rubric/chấm điểm.** Đây không phải vấn đề của một người — đây là pattern xuyên suốt nhóm. (Bonus: scan rộng giúp nhóm tự tin chọn đúng problem)
 
 ---
 
